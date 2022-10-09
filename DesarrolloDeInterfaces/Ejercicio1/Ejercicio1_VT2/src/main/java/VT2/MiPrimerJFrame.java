@@ -26,73 +26,101 @@ public class MiPrimerJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        TextoInicio = new javax.swing.JLabel();
-        NombreUsuario = new javax.swing.JTextField();
-        BotonAceptar = new javax.swing.JButton();
+        jlabelNombre = new javax.swing.JLabel();
+        jlabelApellidos = new javax.swing.JLabel();
+        jTextFieldApellidos = new javax.swing.JTextField();
+        jTextFieldNombre = new javax.swing.JTextField();
+        jLabelInstruccion = new javax.swing.JLabel();
+        botonAceptar = new javax.swing.JButton();
+        jLabelResultado = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ejercicio 1 ");
         setBounds(new java.awt.Rectangle(50, 50, 400, 400));
 
-        TextoInicio.setBackground(new java.awt.Color(255, 255, 51));
-        TextoInicio.setFont(new java.awt.Font("Myanmar Text", 0, 24)); // NOI18N
-        TextoInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        TextoInicio.setText("Introduzca su nombre:");
+        jlabelNombre.setBackground(new java.awt.Color(0, 204, 204));
+        jlabelNombre.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jlabelNombre.setText("Nombre:");
 
-        NombreUsuario.setBackground(new java.awt.Color(102, 255, 255));
-        NombreUsuario.setFont(new java.awt.Font("Myanmar Text", 0, 18)); // NOI18N
-        NombreUsuario.addActionListener(new java.awt.event.ActionListener() {
+        jlabelApellidos.setBackground(new java.awt.Color(0, 204, 204));
+        jlabelApellidos.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jlabelApellidos.setText("Apellidos:");
+
+        jLabelInstruccion.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jLabelInstruccion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelInstruccion.setText("Introduzca su nombre y apellidos");
+
+        botonAceptar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        botonAceptar.setText("Aceptar");
+        botonAceptar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NombreUsuarioActionPerformed(evt);
+                botonAceptarActionPerformed(evt);
             }
         });
 
-        BotonAceptar.setFont(new java.awt.Font("Myanmar Text", 0, 18)); // NOI18N
-        BotonAceptar.setText("Aceptar");
-        BotonAceptar.setToolTipText("");
-        BotonAceptar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BotonAceptarActionPerformed(evt);
-            }
-        });
+        jLabelResultado.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TextoInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(NombreUsuario)
-                        .addContainerGap())))
+                        .addComponent(jlabelNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jlabelApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
+                        .addComponent(jTextFieldApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(15, 15, 15))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabelInstruccion, javax.swing.GroupLayout.PREFERRED_SIZE, 349, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(149, 149, 149)
-                .addComponent(BotonAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 138, Short.MAX_VALUE))
+                .addGap(153, 153, 153)
+                .addComponent(botonAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(135, Short.MAX_VALUE)
+                    .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(14, 14, 14)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(TextoInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(NombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(BotonAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(83, Short.MAX_VALUE))
+                .addGap(21, 21, 21)
+                .addComponent(jLabelInstruccion, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jlabelNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jTextFieldApellidos, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
+                    .addComponent(jlabelApellidos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(botonAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
+                .addComponent(jLabelResultado, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(74, 74, 74)
+                    .addComponent(jTextFieldNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(265, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void NombreUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NombreUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_NombreUsuarioActionPerformed
-
-    private void BotonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonAceptarActionPerformed
-String saludo = "Hola" + NombreUsuario + ",\nBienvenido";        // TODO add your handling code here:
-    }//GEN-LAST:event_BotonAceptarActionPerformed
+    private void botonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAceptarActionPerformed
+      // TODO add your handling code here:
+      jLabelResultado.setText("Bienvenido "+ jTextFieldNombre.getText() + " " + jTextFieldApellidos.getText());  
+    }//GEN-LAST:event_botonAceptarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,8 +158,12 @@ String saludo = "Hola" + NombreUsuario + ",\nBienvenido";        // TODO add you
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonAceptar;
-    private javax.swing.JTextField NombreUsuario;
-    private javax.swing.JLabel TextoInicio;
+    private javax.swing.JButton botonAceptar;
+    private javax.swing.JLabel jLabelInstruccion;
+    private javax.swing.JLabel jLabelResultado;
+    private javax.swing.JTextField jTextFieldApellidos;
+    private javax.swing.JTextField jTextFieldNombre;
+    private javax.swing.JLabel jlabelApellidos;
+    private javax.swing.JLabel jlabelNombre;
     // End of variables declaration//GEN-END:variables
 }
